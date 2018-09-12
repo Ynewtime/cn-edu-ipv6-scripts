@@ -2,23 +2,23 @@
 
 ### 🔨 v6_y.ps1 脚本说明
 
-脚本名称：v6_y.ps1
-脚本作者：Stephen Tseng | https://www.ynewtime.com
-脚本功能：自动识别本机并配置网络为纯 IPv6
-默认功能：v6_y.ps1 -->
- 1. 默认不需要参数
- 2. 自动识别当前时间是否为华工的断网时间
- 3. 若为非断网时间，则配置电脑（1）开启 IPv6；（2）添加 HOST 内容
- 4. 若为断网时间，则（1）禁用本地的 IPv4；（2）配置 IPv6 DNS 和 HOST
-可选参数：v6_y.ps1 2 --> 
- *. 传入参数 2，则禁止本地所有网络适配器的 IPv6 功能，网络设置为纯 IPv4
-补充说明：纯 IPv4 即平时非断网时段正常使用的情况（多数人并没有开启 IPv6）
-亮点提示：纯 IPv6 + DNS + HOST 可以访问 Google 等支持 IPv6 协议的网站，测试成功有：
-          Google系（搜索、邮箱、翻译、地图等） / Youtube / IPTV / Facebook
-          Baidu / Bing / Github系（主页和Pages）/ Flickr / Tumblr
-          Telegram系（Telegram + Telegraph）/ Bilibili（版权内）
-          Reddit / Pinterest / 网易云（GPDR限制）/ UNSPLASH
-最后更新：2018-09-12 08:52
+脚本名称：v6_y.ps1  
+脚本作者：Stephen Tseng | https://www.ynewtime.com  
+脚本功能：自动识别本机并配置网络为纯 IPv6  
+默认功能：v6_y.ps1 -->  
+ 1. 默认不需要参数  
+ 2. 自动识别当前时间是否为华工的断网时间  
+ 3. 若为非断网时间，则配置电脑（1）开启 IPv6；（2）添加 HOST 内容  
+ 4. 若为断网时间，则（1）禁用本地的 IPv4；（2）配置 IPv6 DNS 和 HOST  
+可选参数：v6_y.ps1 2 -->   
+ *. 传入参数 2，则禁止本地所有网络适配器的 IPv6 功能，网络设置为纯 IPv4  
+补充说明：纯 IPv4 即平时非断网时段正常使用的情况（多数人并没有开启 IPv6）  
+亮点提示：纯 IPv6 + DNS + HOST 可以访问 Google 等支持 IPv6 协议的网站，测试成功有：  
+          Google系（搜索、邮箱、翻译、地图等） / Youtube / IPTV / Facebook  
+          Baidu / Bing / Github系（主页和Pages）/ Flickr / Tumblr  
+          Telegram系（Telegram + Telegraph）/ Bilibili（版权内）  
+          Reddit / Pinterest / 网易云（GPDR限制）/ UNSPLASH  
+最后更新：2018-09-12 08:52  
 
 ### 🔨 功能描述
 
@@ -54,5 +54,6 @@
 - 如需自行修改源代码，请解压 PACK.zip 中的文件进行操作
 - 推荐使用 VScode 编辑器，可以方便地在底部的状态栏切换编码
 - 重要！使用 VScode 编辑器切换编码时会弹出两个选项：
-- （1）使用新的编码格式打开；（2）保存为新的编码格式
+-- （1）使用新的编码格式打开；
+--（2）保存为新的编码格式
 - 推荐使用 UTF-8 编码修改完所有的代码之后，另存为新的文件，再保存为 GB18030 编码
