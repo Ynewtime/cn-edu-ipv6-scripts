@@ -3,8 +3,8 @@
 ### 🔨 v6_y.ps1 脚本说明
 
 **脚本名称**：v6_y.ps1  
-**脚本作者**：Stephen Tseng | https://www.ynewtime.com  
-**脚本功能**：自动识别本机并配置网络为纯 IPv6  
+**脚本作者**：[Stephen Tseng](https://www.ynewtime.com)  
+**脚本功能**：自动识别本机并配置 IPv6 环境  
 **默认功能**：`v6_y.ps1` -->  
  1. 默认不需要参数  
  2. 自动识别当前时间是否为华工的断网时间  
@@ -14,11 +14,11 @@
 **可选参数**：`v6_y.ps1 2` --> 传入参数 2，则禁止本地所有网络适配器的 IPv6 功能，网络设置为纯 IPv4  
 **补充说明**：纯 IPv4 即平时非断网时段正常使用的情况（多数人并没有开启 IPv6）  
 **亮点提示**：纯 IPv6 + DNS + HOST 可以访问 Google 等支持 IPv6 协议的网站，测试成功有：  
-          Google系（搜索、邮箱、翻译、地图等） / Youtube / IPTV / Facebook  
-          Baidu / Bing / Github系（主页和Pages）/ Flickr / Tumblr  
-          Telegram系（Telegram + Telegraph）/ Bilibili（版权内）  
-          Reddit / Pinterest / 网易云（GPDR限制）/ UNSPLASH  
-**最后更新**：2018-09-12 08:52  
+          [Google](https://www.google.com)系（搜索、邮箱、翻译、地图等） / [Youtube](//www.youtube.com) / [IPTV](//iptv.tsinghua.edu.cn) / [Facebook](//www.facebook.com)  
+          [Baidu](//www.baidu.com) / [Bing](//www.bing.com) / [Github](//github.com)系（主页和Pages）/ [Flickr](//www.flickr.com) / [Tumblr](//www.tumblr.com)  
+          Telegram系（[Telegram](//telegram.org) + [Telegraph](//telegra.ph) / [Bilibili](//www.bilibili.com)（版权内）  
+          [Reddit](//www.reddit.com) / [Pinterest](//www.pinterest.com) / [UNSPLASH](//unsplash.com/collections)  
+**最后更新**：2018-09-12 20:52  
 
 ### 🔨 功能描述
 
@@ -43,11 +43,11 @@
 
 1、 文件夹中共有五个文件：
 
-- v6_y.ps1 --> 主要的执行文件，编码格式为 GB18030，重要！
-- setup.bat --> 一键脚本，双击运行即可，编码格式为 GB18030，重要！
-- README.txt --> 此脚本的说明文件
-- host --> IPv6 HOST 文件，重要！
-- PACK.zip --> 源代码，UTF-8 编码
+- **v6_y.ps1** --> 主要的执行文件，编码格式为 GB18030，重要！
+- **setup.bat** --> 一键脚本，双击运行即可，编码格式为 GB18030，重要！
+- **README.txt** --> 此脚本的说明文件
+- **host** --> IPv6 HOST 文件，重要！
+- **PACK.zip** --> 源代码，UTF-8 编码
 
 2、**注意**：
 
@@ -55,5 +55,5 @@
 - 推荐使用 VScode 编辑器，可以方便地在底部的状态栏切换编码
 - 重要！使用 VScode 编辑器切换编码时会弹出两个选项：
 -- （1）使用新的编码格式打开；
---（2）保存为新的编码格式
+-- （2）保存为新的编码格式
 - 推荐使用 UTF-8 编码修改完所有的代码之后，另存为新的文件，再保存为 GB18030 编码
