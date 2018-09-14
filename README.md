@@ -1,7 +1,7 @@
 # 📌釋放教育網 IPv6 的潛能（脚本篇）
 
-date: 2018-09-12
-description: Windows IPv6 环境自动配置脚本：自动识别本机时间并配置 IPv6 环境
+date: 2018-09-12  
+description: 【Windows IPv6 环境自动配置脚本：自动识别本机时间并配置 IPv6 环境】
 
 ![](/media/files/WEBP/oudom-pravat-433359-unsplash.webp)
 
