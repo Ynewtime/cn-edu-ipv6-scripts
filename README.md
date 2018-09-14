@@ -1,10 +1,20 @@
-## 📌IPv6 自动化脚本
+# 📌釋放教育網 IPv6 的潛能（脚本篇）
 
-### 🔨 v6_y.ps1 脚本说明
+date: 2018-09-12
+description: Windows IPv6 环境自动配置脚本：自动识别本机时间并配置 IPv6 环境
+
+![](/media/files/WEBP/oudom-pravat-433359-unsplash.webp)
+
+## 🔨 v6_y.ps1 脚本说明
+
+【[项目地址](https://github.com/Ynewtime/IPv6_Auto_Settings)】
+【下载地址】：
+ - 从上述的项目仓库下载（保持更新）
+ - 从[这里](https://raw.githubusercontent.com/Ynewtime/IPv6_Auto_Settings/master/IPv6%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC.zip)下载（直链）
 
 **脚本名称**：v6_y.ps1  
 **脚本作者**：[Stephen Tseng](https://www.ynewtime.com)  
-**脚本功能**：自动识别本机并配置 IPv6 环境  
+**脚本功能**：自动识别本机时间并配置 IPv6 环境  
 **默认功能**：`v6_y.ps1` -->  
  1. 默认不需要参数  
  2. 自动识别当前时间是否为华工的断网时间  
@@ -13,14 +23,14 @@
 
 **可选参数**：`v6_y.ps1 2` --> 传入参数 2，则禁止本地所有网络适配器的 IPv6 功能，网络设置为纯 IPv4  
 **补充说明**：纯 IPv4 即平时非断网时段正常使用的情况（多数人并没有开启 IPv6）  
-**亮点提示**：纯 IPv6 + DNS + HOST 可以访问 Google 等支持 IPv6 协议的网站，测试成功有：  
-          [Google](https://www.google.com)系（搜索、邮箱、翻译、地图等） / [Youtube](//www.youtube.com) / [IPTV](//iptv.tsinghua.edu.cn) / [Facebook](//www.facebook.com)  
-          [Baidu](//www.baidu.com) / [Bing](//www.bing.com) / [Github](//github.com)系（主页和Pages）/ [Flickr](//www.flickr.com) / [Tumblr](//www.tumblr.com)  
-          Telegram系（[Telegram](//telegram.org) + [Telegraph](//telegra.ph) / [Bilibili](//www.bilibili.com)（版权内）  
-          [Reddit](//www.reddit.com) / [Pinterest](//www.pinterest.com) / [UNSPLASH](//unsplash.com/collections)  
+**亮点提示**：纯 IPv6 + DNS + HOST 可以访问 Google 等支持 IPv6 协议的网站，测试成功有：
+
+[Google](https://www.google.com)系（搜索、邮箱、翻译、地图等） / [Youtube](//www.youtube.com) / [IPTV](//iptv.tsinghua.edu.cn) / [Facebook](//www.facebook.com) / [Baidu](//www.baidu.com) / [Bing](//www.bing.com) / [Github](//github.com)系（主页和Pages）/ [Flickr](//www.flickr.com) / [Tumblr](//www.tumblr.com) / Telegram系（[Telegram](//telegram.org) + [Telegraph](//telegra.ph) / [Bilibili](//www.bilibili.com)（版权内）/ [Reddit](//www.reddit.com) / [Pinterest](//www.pinterest.com) / [UNSPLASH](//unsplash.com/collections)
+{:.poem}  
+
 **最后更新**：2018-09-12 20:52  
 
-### 🔨 功能描述
+## 🔨 功能描述
 
 1. 自动识别系统时间
 2. 如果在工作日凌晨六点之前（为华工的断网时间，断网时间 IPv4 被禁止，IPv6 正常工作），则：
@@ -32,22 +42,22 @@
 4. 如果是非华工学生使用，即贵校没有断网的情况下，请在白天运行该脚本一次即可。（后续会添加新的可选参数）
 5. 注意，脚本使用的前提是当前的网络支持 IPv6
 
-### 🔨 v6_y.ps1 脚本使用
+## 🔨 v6_y.ps1 脚本使用
 
 1. 使用默认功能：直接双击 v6_y.bat 即可；
 2. 使用可选功能：
  - 按下快捷键 `win + x` 打开 Powershell，输入 `cd \脚本所在路径` 进入放置脚本的路径，接着输入 `.\v6_y.ps1 2` 即可启用可选功能
  - 按下快捷键 `win + r` 打开运行，输入 `cmd` 打开命令行，输入 `cd \脚本所在路径` 进入放置脚本的路径，接着输入 `Powershell .\v6_y.ps1 2` 即可启用可选功能
 
-### 🔨 v6_y.ps1 脚本注意
+## 🔨 v6_y.ps1 脚本注意
 
 1、 文件夹中共有五个文件：
 
-- **v6_y.ps1** --> 主要的执行文件，编码格式为 GB18030，重要！
-- **setup.bat** --> 一键脚本，双击运行即可，编码格式为 GB18030，重要！
-- **README.txt** --> 此脚本的说明文件
-- **host** --> IPv6 HOST 文件，重要！
-- **PACK.zip** --> 源代码，UTF-8 编码
+- v6_y.ps1 --> 主要的执行文件，编码格式为 GB18030，重要！
+- setup.bat --> 一键脚本，双击运行即可，编码格式为 GB18030，重要！
+- README.txt --> 此脚本的说明文件
+- host --> IPv6 HOST 文件，重要！
+- PACK.zip --> 源代码，UTF-8 编码
 
 2、**注意**：
 
@@ -57,3 +67,14 @@
 -- （1）使用新的编码格式打开；
 -- （2）保存为新的编码格式
 - 推荐使用 UTF-8 编码修改完所有的代码之后，另存为新的文件，再保存为 GB18030 编码
+
+3、问题反馈
+
+（1）若系统装有杀毒软件，可能会阻止脚本运行，允许即可；  
+（2）若脚本允许时报“未知脚本”错误，被禁止运行，请修改 Powershell 执行策略（一般来说不需要，因为脚本中设置了绕过方法）
+
+## 🔨 TODO
+
+1、添加一个判断本机的网络情况，如果不支持 IPv6，则警告退出2
+2、添加系统环境变量，从而可以通过命令来运行
+3、能否通过桌面视窗呈现？
