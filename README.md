@@ -7,7 +7,7 @@ description: 【Windows IPv6 环境自动配置脚本：自动识别本机时间
 
 ## 🔨 v6_y.ps1 脚本说明
 
-【[项目地址](https://github.com/Ynewtime/IPv6_Auto_Settings)】
+【[项目地址](https://github.com/Ynewtime/IPv6_Auto_Settings)】   
 【下载地址】：
  - 从上述的项目仓库下载（保持更新）
  - 从[这里](https://raw.githubusercontent.com/Ynewtime/IPv6_Auto_Settings/master/IPv6%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC.zip)下载（直链）
