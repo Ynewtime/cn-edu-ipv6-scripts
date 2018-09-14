@@ -28,7 +28,7 @@ description: Windows IPv6 环境自动配置脚本：自动识别本机时间并
 [Google](https://www.google.com)系（搜索、邮箱、翻译、地图等） / [Youtube](//www.youtube.com) / [IPTV](//iptv.tsinghua.edu.cn) / [Facebook](//www.facebook.com) / [Baidu](//www.baidu.com) / [Bing](//www.bing.com) / [Github](//github.com)系（主页和Pages）/ [Flickr](//www.flickr.com) / [Tumblr](//www.tumblr.com) / Telegram系（[Telegram](//telegram.org) + [Telegraph](//telegra.ph) / [Bilibili](//www.bilibili.com)（版权内）/ [Reddit](//www.reddit.com) / [Pinterest](//www.pinterest.com) / [UNSPLASH](//unsplash.com/collections)
 {:.poem}  
 
-**最后更新**：2018-09-12 20:52  
+**最后更新**：2018-09-14 
 
 ## 🔨 功能描述
 
