@@ -1,6 +1,6 @@
 @echo off
 
-echo 网络配置中，请稍等...
+echo 网络正在配置中...
 powershell .\v6_y.ps1
 
-pause
+exit

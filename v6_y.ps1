@@ -82,7 +82,7 @@ $out_put = "`
 #===========================================================================================# "
 
 $out_put_1 = "`
-#===================#`
+#=====================#`
 选择：默认模式 `
 等待：脚本执行中 `
 状态：正在开启 IPv6 "
@@ -90,7 +90,7 @@ $out_put_1 = "`
 $out_put_2 = "`
 选择：禁用模式 `
 等待：脚本执行中 `
-#===================#`
+#=====================#`
 状态：正在禁用 IPv6 "
 
 $root = Split-Path -Parent $MyInvocation.MyCommand.Definition # 获得当前脚本的路径
@@ -192,7 +192,9 @@ else
 
         # 设置 IPv6 HOST
         echo "状态：正在设置 IPv6 HOST"
-        Copy-Item $hosts -Destination $hosts_dir -Force
+        # Copy-Item $hosts -Destination $hosts_dir -Force
+        $client = new-object System.Net.WebClient
+        $client.DownloadFile('https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts','C:\windows\system32\drivers\etc\hosts')
         echo "状态：IPv6 HOST设置成功"
         echo "#======================#"
         echo "结果：IPv6 HOST设置成功"
@@ -234,7 +236,9 @@ else
 
         # 设置 IPv6 HOST
         echo "状态：正在设置 IPv6 HOST"
-        Copy-Item $hosts -Destination $hosts_dir -Force
+        # Copy-Item $hosts -Destination $hosts_dir -Force
+        $client = new-object System.Net.WebClient
+        $client.DownloadFile('https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts','C:\windows\system32\drivers\etc\hosts')
         echo "状态：IPv6 HOST设置成功"
         echo "#=====================#"
         echo "结果：IPv6 HOST设置成功"
@@ -269,7 +273,7 @@ else
         ipconfig /flushdns | Out-Null
         echo "结果：DNS 刷新成功"
         echo "#================================#"
-        echo "结果：纯 IPv6 环境已启动，玩得愉快"
+        echo "结果：IPv4 + IPv6 环境已启动，玩得愉快"
         echo "#================================#"
 
         # 输出当前网络配置信息
