@@ -1,6 +1,6 @@
 @echo off
 
-echo ÍøÂçÕýÔÚÅäÖÃÖÐ...
+echo ç½‘ç»œæ­£åœ¨é…ç½®ä¸­...
 powershell .\v6_y.ps1
 
 exit
